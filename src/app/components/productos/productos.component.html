@@ -1,0 +1,45 @@
+<section class="SLIDER">    
+
+  <div class="principal">
+    <div class="letrero"><h3 class="title-products">Personalizados full color</h3> </div>
+    <div class="secondary">
+    <div class="slider-img"><app-slider></app-slider></div>
+    <div class="terceario">
+      <p class="text-promo">
+        Somos tu mejor opcion en merchandising de articulos publicitarios<br>
+        Descarga nuestro catalago y mantente activo a nuestras promociones</p>
+        <div class="boton-catalago">
+           <a href="https://wa.me/p/5761676263893226/51912346852" class="text-catalago">Descargar catalago</a>
+        </div>
+        <img class="img-promo" src="assets/images/promociona.jpg" alt="" srcset="">
+    </div>
+    </div>
+  </div>
+</section>
+
+<!---------- Our Products ---------->
+
+<section class="newProduct section">
+  <div class="container products">  
+    <div class="contenedor">
+      <div class="titulo">
+          <div class="shape right-skew">
+              <i class="fas fa-laptop"></i>
+              <p>Nuestros productos</p>
+          </div>
+        </div>
+    </div>
+    <br>
+    <div class="caja-products">
+    <div class="new-content">
+      <div class="row" *ngFor="let product of products">
+        <img class="img-product" src="{{ product.img }}">
+        <h4>{{ product.title }}</h4>
+        <h5>{{ product.caption }}</h5>
+        <h3 class="price">{{ product.price | currency }}</h3>
+        <button (click)="addToCart(product)" class="btn-add-cart">Agregar</button>
+      </div>
+      </div>
+    </div>
+    </div>
+   </section>

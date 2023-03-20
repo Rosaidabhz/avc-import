@@ -1,0 +1,46 @@
+
+<header>
+    <nav class="white">
+        <div class="logo">
+           <img src="assets/images/logo.png" class="logo-link">
+        </div>
+        <div class="toggle">
+            <span class="first"></span>
+            <span class="middle"></span>
+            <span class="last"></span>
+        </div>
+        <div class="navigation-bar" style="z-index: 3;">
+            <ul>
+                <li class="active"><a href="home">INICIO<span class="underline"></span></a></li>
+                <li><a href="sobre">SOBRE NOSOTROS<span class="underline"></span></a></li>
+                <li><a href="productosimport">PRODUCTOS IMPORT<span class="underline"></span></a></li>
+            </ul>
+        </div>
+      <div class="shopping" (click)="toggleShoppingCart()">
+        <a class="cart"><i class='bx bxs-cart-download'></i></a>
+          <div class="count-products">
+            <i class="fa-solid fa-xmark exit"></i>
+            <span id="contador-productos">{{ totalCart }}</span>
+          </div>
+        </div>  
+    </nav>
+  </header>  
+  <div class="container-cart-products" [ngClass]="shoppingCartFlat ? 'hidden-cart' : ''">
+        <div class="row-product">
+            <div class="cart-product" *ngFor="let product of cart;">
+              <div class="info-cart-product">
+                <p class="titulo-producto-carrito">{{ product.title }}</p>
+                <span class="precio-producto-carrito">{{ product.price | currency }}</span>
+              </div>
+              <div class="icon-close" (click)="removeFromCart(product)">
+                <i class='bx bx-x-circle'></i>
+              </div>
+            </div>
+          </div>
+          
+        <div class="cart-total">
+          <h3 class="price">Total:&nbsp;</h3>
+          <span class="total-pagar">{{ total() | currency }}<button class="boton-wsp"  (click)="sendWhatsapp()"><a class="text-wsp"><img  class="img-wsp" src="assets/images/icons-whatsapp.png"> enviar pedido por Whatsapp</a></button>
+          </span>
+        </div>
+      </div>
