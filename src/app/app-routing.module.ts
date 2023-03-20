@@ -5,6 +5,10 @@ import { PortadaComponent } from './components/portada/portada.component';
 import { ProductosComponent } from './components/productos/productos.component';
 
 const routes: Routes = [
+  {
+    path:'',
+    component:PortadaComponent
+  },
   {path:'home',
   component:PortadaComponent
 },
