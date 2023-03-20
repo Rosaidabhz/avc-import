@@ -11,7 +11,7 @@ const routes: Routes = [
   {
   path:'productosimport',
   component:ProductosComponent
-}
+},
 {
   path:'sobre',
   component:AboutUsComponent
