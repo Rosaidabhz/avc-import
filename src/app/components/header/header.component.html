@@ -1,36 +1,35 @@
 <header>
   <!-- Barra de navegacion   -->
-  <div class="navbar-fixed">
-    <nav class="navbar-mi-color grey lighten-4" role="navigation">
-      <div class="nav-wrapper container">
-        <a id="logo-container" href="/" class="brand-logo">
-          <img class="logo" src="assets/images/logo.png">
-        </a>
-        <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-      <ul>
+  <nav class="grey lighten-4" role="navigation">
+    <div class="nav-wrapper container">
+      <img class="brand-logo" src="assets/images/logo.png">
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons blue-text">menu</i></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li class="valign-wrapper"><a class="link nav-link black-text center-align" href="home">INICIO</a></li>
+        <li class="valign-wrapper"><a class="link nav-link black-text center-align" href="sobre">SOBRE NOSOTROS</a></li>
+        <li class="valign-wrapper"><a class="link nav-link black-text center-align" href="productosimport">PRODUCTOS IMPORT</a></li>
         <li>
-            <a>
-              <div class="shopping" (click)="toggleShoppingCart()">
-                <i class=' bx bxs-cart-download'></i>
-                <span class="black-text" id=" count-products fa-solid fa-xmark exit contador-productos">{{
-                  totalCart }}</span>
-              </div>
-            </a>
+          <a (click)="toggleCartPanel()">
+            <div class="shopping">
+              <i class='bx bxs-cart-download'></i>
+              <span class="black-text" id="count-products fa-solid fa-xmark exit contador-productos">{{ totalCart}}</span>
+            </div>
+          </a>
         </li>
       </ul>
-        <ul class="right hide-on-med-and-down">
-          <li><a class="link nav-link black-text" href="home">INICIO</a></li>
-          <li><a class="link nav-link black-text" href="sobre">SOBRE NOSOTROS</a></li>
-          <li><a class="link nav-link black-text" href="productosimport">PRODUCTOS IMPORT</a></li>
-          <li>
-          </ul>
-      </div>
-    </nav>
-  </div>
+    </div>
+  </nav>
+
+  <ul class="sidenav" id="mobile-demo">
+    <li><a class="link nav-link black-text" href="home">INICIO</a></li>
+    <li><a class="link nav-link black-text" href="sobre">SOBRE NOSOTROS</a></li>
+    <li><a class="link nav-link black-text" href="productosimport">PRODUCTOS IMPORT</a></li>
+  </ul>
 
   <!-- Sidebar del carrito -->
-  <div id="search-demo" class="sidenav sidenav-close left" class="container-cart-products"
-    [ngClass]="shoppingCartFlat ? 'hidden-cart' : ''">
+  <div class="cart-panel container-cart-products" [ngClass]="{ 'open': isCartPanelOpen }"
+  [ngClass]="shoppingCartFlat ? 'hidden-cart' : ''">
+  <button class="close-btn" (click)="closeCartPanel()"><i class='bx bx-x-circle'></i></button>
     <div class="row-product">
       <div class="cart-product" *ngFor="let product of cart;">
         <div class="info-cart-product">
@@ -51,3 +50,12 @@
     </div>
   </div>
 </header>
+
+<div class="fixed-action-btn hide-on-large-only">
+  <a class="btn-floating btn-large" (click)="toggleCartPanel()">
+      <div class="shopping">
+        <i class='bx bxs-cart-download'></i>
+        <span class="black-text" id="count-products fa-solid fa-xmark exit contador-productos">{{ totalCart}}</span>
+      </div>
+    </a>
+</div>

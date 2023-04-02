@@ -1,85 +1,90 @@
-.navbar-mi-color{
-  color: #ebebeb!important;
+.navbar-mi-color {
+  color: #ebebeb !important;
 }
-.logo{
+
+.brand-logo {
   width: 80px !important;
   height: 60px !important;
 }
+
 .navbar-mi-color ul {
   float: right;
   margin: 20px;
 }
 
+.link{
+  margin-top: 15px !important;
+  color: #000 !important;
+}
+.link:hover{
+  color: #1e21df !important;
+}
+
 /*End Home Page Responsive*/
-  /*End Home Page Responsive*/
-  /*Variables*/
+/*End Home Page Responsive*/
+/*Variables*/
 
-  $--bg-color: #FFFFFF;
-  $--second-color: #74AB2C;
-  $--main-color: #016f32;
-  $--text-color: #000000;
-  $--other-color: #DF1E26;
-  $--text-grey: #BBBECC;
-  $--text-darkg: #ffffff;
-  $---big-font: 4.5rem;
-  $--h1-font: 4rem;
-  $--h2-font: 3.5rem;
-  $--h3-font: 2.625rem;
-  $--p-font: 1rem;
+$--bg-color: #FFFFFF;
+$--second-color: #74AB2C;
+$--main-color: #016f32;
+$--text-color: #000000;
+$--other-color: #DF1E26;
+$--text-grey: #BBBECC;
+$--text-darkg: #ffffff;
+$---big-font: 4.5rem;
+$--h1-font: 4rem;
+$--h2-font: 3.5rem;
+$--h3-font: 2.625rem;
+$--p-font: 1rem;
 
 
 
-.img-wsp{
+.img-wsp {
   width: 30px;
   margin-left: 10px;
-    }
-
-    .boton-wsp{
-      flex-direction: row;
-      display: flex;
-      width: 170px;
-      height: 40px;
-      background: #4b9e52;
-      border:#4b9e52;
-      border-radius: 38px;
-      justify-content: center;
-      justify-items:center;
-      text-align: center;
-      margin-top: 10px;
-      margin-bottom: 1rem;
-      cursor: pointer;
-    }
-
-    .boton-wsp:hover {
-      background-color: #0c2b13; /* Green */
-      color: white;
-    }
-
-    .text-wsp{
-      font-size: 15px;
-      font-weight: 400;
-      text-decoration: none;
-      display: flex;
-      font-family: 'Poppins';
-      text-align: center;
-      margin-top: 5px;
-      color: beige;
-      font-family: "Poppins";
-    }
-/* CARRITO */
-.cart-container {
-  position: absolute;
-  width: 60px;
-  height: 60px;
-  margin-right: 10rem;
-  bottom: 0;
-  top: 13px;
 }
+
+.boton-wsp {
+  flex-direction: row;
+  display: flex;
+  width: 170px;
+  height: 40px;
+  background: #4b9e52;
+  border: #4b9e52;
+  border-radius: 38px;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+.boton-wsp:hover {
+  background-color: #0c2b13;
+  /* Green */
+  color: white;
+}
+
+.text-wsp {
+  font-size: 15px;
+  font-weight: 400;
+  text-decoration: none;
+  display: flex;
+  font-family: 'Poppins';
+  text-align: center;
+  margin-top: 5px;
+  color: beige;
+  font-family: "Poppins";
+}
+
+/* CARRITO */
 
 .shopping i {
   font-size: 50px;
   color: rgb(0, 136, 214);
   transition: all .50s ease;
+  margin-top: 10px !important;
 }
 
 .shopping i:hover {
@@ -102,49 +107,19 @@
 }
 
 
-.container-cart-products{
-    display: flex;
-    justify-content: center;
-    justify-items: center;
-    text-align: center;
-    align-items: center;
-    flex-direction: column;
-    position: absolute;
-
+#contador-productos {
+  font-size: 12px;
 }
 
 
-#contador-productos{
-    font-size: 12px;
-}
 
-.container-cart-products{
-    display: flex;
-    position: absolute;
-    right: 0px;
-    background-color: $--bg-color;
-    width: 500px;
-    z-index: 1;
-    box-shadow: 0 10px 20px rgb(187, 190, 204);
-    border-radius: 15px;
-    text-align: center;
-    justify-content: center;
-    justify-items: center;
-    padding: 0;
-    margin: 0px;
-    gap: 1rem;
-}
-#search-demo {
-  position: fixed;
-  z-index: 9999;
-}
 .shopping {
   position: relative;
 }
 
 .shopping .black-text {
   position: absolute;
-  top: -10px;
+  top: 10px;
   right: -10px;
   background-color: white;
   border-radius: 50%;
@@ -154,78 +129,86 @@
   border: 1px solid black;
 }
 
-.cart-product{
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-    padding: 20px;
+.cart-product {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  padding: 20px;
 
 
 }
 
-.info-cart-product{
-    padding-top: 0px;
-    display: flex;
-    justify-content: space-around;
-    flex: 0.8;
-    background-color: $--bg-color;
-    gap: 4rem;
-  }
-
-
-.icon-close i{
-    display: flex;
-    justify-content: space-around;
-    flex: 0.8;
-    font-size: 24px;
-    color: $--main-color;
+.info-cart-product {
+  padding-top: 0px;
+  display: flex;
+  justify-content: space-around;
+  flex: 0.8;
+  background-color: $--bg-color;
+  gap: 4rem;
 }
 
-.icon-close i:hover{
-    color: $--other-color;
-    cursor: pointer;
+
+.icon-close i {
+  display: flex;
+  justify-content: space-around;
+  flex: 0.8;
+  font-size: 24px;
+  color: $--main-color;
 }
 
-.titulo-producto-carrito{
-    font-size: 18px;
-    font-weight: 400;
+.icon-close i:hover {
+  color: $--other-color;
+  cursor: pointer;
 }
 
-.precio-producto-carrito{
-    font-size: 18px;
-    font-weight: 600;
-    margin-right: 10px;
+.titulo-producto-carrito {
+  font-size: 18px;
+  font-weight: 400;
 }
 
-.cantidad-producto-carrito{
-    font-size: 18px;
-    margin-left: 10px;
+.precio-producto-carrito {
+  font-size: 18px;
+  font-weight: 600;
+  margin-right: 10px;
 }
 
-.cart-total{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 20px 0;
-    gap: 20px;
+.cantidad-producto-carrito {
+  font-size: 18px;
+  margin-left: 10px;
 }
 
-.cart-total h3{
-    font-size: 20px;
-    font-weight: 400;
+.cart-total {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  gap: 20px;
 }
 
-.total-pagar{
-    font-size: 20px;
-    font-weight: 600;
+.cart-total h3 {
+  font-size: 20px;
+  font-weight: 400;
 }
 
-.hidden-cart{
-    display: none;
+.total-pagar {
+  font-size: 20px;
+  font-weight: 600;
 }
 
-@media screen and (max-width: 390px) {
-  .shopping,a{
-  right: 5rem;
+.hidden-cart {
+  display: none;
 }
+.cart-panel {
+  position: fixed;
+  top: 0;
+  right: -300px;
+  width: 300px;
+  height: 100%;
+  background-color: #fff;
+  z-index: 9999;
+  transition: all 0.3s ease-in-out;
+}
+
+.cart-panel.open {
+  right: 0;
 }

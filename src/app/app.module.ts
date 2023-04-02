@@ -12,6 +12,7 @@ import { FoonterComponent } from './components/foonter/foonter.component';
 import { AboutUsComponent } from './components/about-us/about-us.component';
 import { YouTubePlayerModule } from "@angular/youtube-player";
 import { SliderComponent } from './components/slider/slider.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome'
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { SliderComponent } from './components/slider/slider.component';
     BrowserModule,
     AppRoutingModule,
     YouTubePlayerModule,  
+    FontAwesomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
