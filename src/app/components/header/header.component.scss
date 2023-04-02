@@ -212,3 +212,18 @@ $--p-font: 1rem;
 .cart-panel.open {
   right: 0;
 }
+@media (max-width: 767px) {
+  .shopping i {
+    font-size: 30px;
+    color: #000;
+  }
+  .shopping .black-text{
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    padding: 4px;
+    font-size: 14px;
+    font-weight: bold;
+    border: 1px solid black;
+  }
+}

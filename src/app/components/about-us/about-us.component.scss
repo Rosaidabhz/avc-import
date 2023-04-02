@@ -2,7 +2,12 @@
     color: #0f8e44;
     width: 30px;
 }
-
+@media (max-width: 767px) {
+    .about-us-text p {
+      font-size: 14px;
+    }
+  }
+  
 .about-us-title {
     font-family: 'Poppins';
     font-style: normal;
