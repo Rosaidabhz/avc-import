@@ -20,14 +20,14 @@
     </div>
   </nav>
 
-  <ul class="sidenav" id="mobile-demo">
+  <ul class="panel-color sidenav" id="mobile-demo">
     <li><a class="link nav-link black-text" href="home">INICIO</a></li>
     <li><a class="link nav-link black-text" href="sobre">SOBRE NOSOTROS</a></li>
     <li><a class="link nav-link black-text" href="productosimport">PRODUCTOS IMPORT</a></li>
   </ul>
 
   <!-- Sidebar del carrito -->
-  <div class="cart-panel container-cart-products" [ngClass]="{ 'open': isCartPanelOpen }"
+  <div class="panel-color cart-panel container-cart-products" [ngClass]="{ 'open': isCartPanelOpen }"
   [ngClass]="shoppingCartFlat ? 'hidden-cart' : ''">
   <button class="close-btn" (click)="closeCartPanel()"><i class='bx bx-x-circle'></i></button>
     <div class="row-product">

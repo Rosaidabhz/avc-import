@@ -143,15 +143,11 @@
     font-weight: 700;
     width: 100%;
     align-self: center;
-    padding: .75rem 2rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    padding: .75rem;
     display: flex;
     font-size: 15px;
-    margin-top: 34px;
     justify-content: center;
     text-decoration: none;
-
 }
 
 .tarjetas--start {
@@ -175,8 +171,7 @@
 
 .tarjetas__boton--mega:hover {
     background-color: #4CAF50;
-    /* Green */
-    color: rgb(204, 0, 0);
+    color: rgb(0, 0, 0);
 }
 
 
@@ -212,7 +207,15 @@
     display: flex;
     align-items: center;
     padding-top: 60px;
-    padding-bottom: 1rem;
+    padding-bottom: 7rem;
+    background-image: url(https://img.freepik.com/free-psd/white-ceramic-mug-mockup-isolated_176382-1068.jpg?w=2000);
+    background-position: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
 }
 
 .about-us-left {
