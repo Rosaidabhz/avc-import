@@ -1,5 +1,4 @@
 .hero {
-  background-color: #fcfcfc;
   justify-content: center;
   align-items: center;
   margin-top: 2rem;
@@ -17,10 +16,12 @@
 .img-tienda{
   height: 550px;
 }
-.line {
-  border: 1px solid #0F3460;
+
+.line, .line-color {
+  border: 3px solid #0073ff !important;
   margin: auto;
   width: 100%;
+  color: #000 !important;
 }
 
 .text2 {
@@ -36,7 +37,6 @@
   padding: 12px 20px;
   border-radius: 5px;
   transition: background-color 0.2s ease;
-  margin-top: 1rem;
   margin-bottom: 1rem;
 }
 .boton:hover {
@@ -184,7 +184,6 @@
 
 /* Targets BTN*/
 .categories-box-btn {
-  margin-top: 2rem;
   display: inline-block;
   padding: 10px 30px;
   color: white;

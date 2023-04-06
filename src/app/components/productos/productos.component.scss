@@ -60,11 +60,11 @@
     padding: 0;
     font-family: 'Poppins';
     align-content: center;
-    background: rgb(255, 186, 106);
     color: rgb(0, 0, 0);
     line-height: 26px;
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 500;
+    font-size: 18px;
 
 }
 
@@ -75,7 +75,7 @@
 }
 
 .title-products {
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     font-family: "Poppins";
     font-size: 25px;
     display: flex;
@@ -87,6 +87,7 @@
     margin-left: 1rem;
     margin-bottom: 1rem;
     margin-top: 1rem;
+    justify-content: center;
 
 
 }
@@ -107,8 +108,7 @@
     display: flex;
     width: 150px;
     height: 50px;
-    background: linear-gradient(90deg, #f51023 0%, #ff7171 100%);
-    border: #bd4747;
+    background: #ab2c2c;
     border-radius: 38px;
     text-align: center;
     justify-content: center;
@@ -117,15 +117,15 @@
 }
 
 .boton-catalago:hover {
-    background-color: #af4c4c;
+    background-color: #ff3e3e;
     /* Green */
     color: white;
 }
 
 .letrero {
-    background-color: rgb(0, 8, 85);
+    background: rgb(255, 186, 106);
     left: 0;
-    width: 30%;
+    width: 100%;
     margin-bottom: 1rem;
     margin-top: 1rem;
 
@@ -147,6 +147,8 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
     text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
 .new-content {
@@ -226,18 +228,23 @@
     padding: 10px;
 }
 
-.row .btn-add-cart {
+.caja-products {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.btn-add-cart {
     font-size: 16px;
-    bottom: 145px;
-    left: 0;
-    right: 0;
-    padding: 10px 40px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
     background: #ab2c2c;
-    border-radius: 45px;
     border: none;
     cursor: pointer;
     color: white;
-    margin-bottom: 1rem;
+    margin-top: auto; 
+    display: flex;
 }
 
 .contenedor {
@@ -248,14 +255,14 @@
 }
 
 .titulo {
-    border-bottom: 3px solid #4B809E;
-    color: #f3f4f5;
+    border-bottom: 3px solid  rgb(255, 186, 106);
+    color: #000000;
     font-family: 'Poppins';
     font-size: 20px;
 }
 
 .titulo .shape {
-    background: #4B809E;
+    background:  rgb(255, 186, 106);
     padding: 10px 20px;
     max-width: 300px;
     position: relative;
@@ -270,7 +277,7 @@
     right: -20px;
     display: block;
     width: 50px;
-    background: #4B809E;
+    background:  rgb(255, 186, 106);
     -webkit-transform: skew(-10deg);
     -ms-transform: skew(-10deg);
     transform: skew(20deg);

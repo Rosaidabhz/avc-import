@@ -7,7 +7,11 @@
       font-size: 14px;
     }
   }
-  
+  .ytp-cued-thumbnail-overlay-image, .video{
+    width: 100% !important;
+    display: flex;
+    position: relative;
+  }
 .about-us-title {
     font-family: 'Poppins';
     font-style: normal;
@@ -38,16 +42,40 @@
     margin: 0 auto;
     position: relative;
 }
-
+.line, .line-color {
+    border: 3px solid #0073ff !important;
+    margin: auto;
+    width: 100%;
+    color: #000 !important;
+  }
+  .hero {
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+  }
+  .categories-home h2 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    text-align: center;
+    color: #000000;
+  }
+  .categories-home hr {
+    border: 3px solid black;
+    width: 300px;
+    margin: 20px auto;
+  }
 .titulo {
-    border-bottom: 3px solid #4B809E;
-    color: #f3f4f5;
+    border-bottom: 3px solid rgb(255, 186, 106);
+    color: #000000;
     font-family: 'Poppins';
     font-size: 20px;
 }
 
 .titulo .shape {
-    background: #4B809E;
+    background: rgb(255, 186, 106);
     padding: 10px 20px;
     max-width: 300px;
     position: relative;
@@ -62,7 +90,7 @@
     right: -20px;
     display: block;
     width: 50px;
-    background: #4B809E;
+    background: rgb(255, 186, 106);
     -webkit-transform: skew(-10deg);
     -ms-transform: skew(-10deg);
     transform: skew(20deg);
@@ -170,11 +198,31 @@
 }
 
 .tarjetas__boton--mega:hover {
-    background-color: #4CAF50;
+    background-color: #c5fcc7;
     color: rgb(0, 0, 0);
 }
 
+.general-contact{
+    padding-bottom: 200px;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    align-items: center;
+    background: #4c90af;
+}
 
+
+.contact-in{
+    width: 80%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    border-radius: 12px;
+    background: #4c8baf;
+    box-shadow: 0px 0px 10px 0px #4c63af;
+}
 
 @media (max-width: 576px) {
 
@@ -266,3 +314,22 @@
     float: left;
   }
   
+.contact-map{
+    width: 100%;
+    height: auto;
+    flex: 50%;
+}
+
+.contact-map iframe{
+    width: 100%;
+    height: 100%;
+}
+
+.contact-form{
+    width: 100%;
+    height: auto;
+    flex: 50%;
+    padding: 30px;
+    text-align: center;
+}
+
