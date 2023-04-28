@@ -65,6 +65,9 @@
 }
 
 @media (max-width: 950px) {
+  .hero {
+    padding: 0px !important;
+  }
   .title-front-page {
     font-size: 2rem;
   }
