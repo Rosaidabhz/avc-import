@@ -11,7 +11,6 @@ import { PortadaComponent } from './components/portada/portada.component';
 import { FoonterComponent } from './components/foonter/foonter.component';
 import { AboutUsComponent } from './components/about-us/about-us.component';
 import { YouTubePlayerModule } from "@angular/youtube-player";
-import { SliderComponent } from './components/slider/slider.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome'
 
 @NgModule({
@@ -22,13 +21,14 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome'
     PortadaComponent,
     FoonterComponent,
     AboutUsComponent,
-    SliderComponent,
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     YouTubePlayerModule,  
-    FontAwesomeModule
+    FontAwesomeModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

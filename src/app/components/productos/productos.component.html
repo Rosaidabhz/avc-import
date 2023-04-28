@@ -1,45 +1,74 @@
-<section class="SLIDER">    
 
-  <div class="principal">
-    <div class="letrero"><h3 class="title-products">Personalizados full color</h3> </div>
-    <div class="secondary">
-    <div class="slider-img"><app-slider></app-slider></div>
-    <div class="terceario">
-      <p class="text-promo">
-        Somos tu mejor opcion en merchandising de articulos publicitarios<br>
-        Descarga nuestro catalago y mantente activo a nuestras promociones</p>
-        <div class="boton-catalago">
-           <a href="https://wa.me/p/5761676263893226/51912346852" class="text-catalago">Descargar catalago</a>
-        </div>
-        <img class="img-promo" src="assets/images/promociona.jpg" alt="" srcset="">
+<section class="newProduct section">
+  <div class="caja-products">
+    <div class="new-content">
+      <div class="row caja" *ngFor="let product of products">
+        <img (click)="showDescription(product)" style="width: 500px; height: 200px; " class="img-product" [src]="'./assets/product_images/' + product.img">
+        <h4>{{ product.title }}</h4>
+        <h5>{{ product.caption }}</h5>
+        <h6 class="price">{{ product.price | currency }} Dolares</h6>
+        <button  (click)="showDescription(product)"  class="btn-add-cart">Ver detalles</button>
+      </div>
     </div>
+  </div>
+
+  <div class="product-card" *ngIf="selectedProduct && isCardVisible">
+    <div class="card-content">
+      <button class="close-button" (click)="closeCard()">X</button>
+      <h4 style="color: rgb(134, 8, 8);"  >{{ selectedProduct.title }}</h4>
+      <div class="product-details">
+        <div class="product-image">
+          <img [src]="'./assets/product_images/' + selectedProduct.img">
+        </div>
+        <div class="product-description-container" style="overflow-y: auto;">
+          <div class="product-description">
+            <h5 style="color: rgb(8, 8, 134);"  >¿Qué Puedes Sublimar?</h5><br><h6>{{ selectedProduct.personalize }}</h6>
+            <h5 style="color: rgb(8, 8, 134);"  >¿Qué incluye la máquina? </h5><br><h6>{{ selectedProduct.includes }}</h6>
+            <h6>{{ selectedProduct.description }}</h6>
+          </div>
+        </div>
+        <button (click)="addToCart(selectedProduct)" style="background-color: rgb(6, 90, 90);" class="btn-add-cart">Agregar al carrito</button>
+      </div>
+    </div>
+    <div class="card-overlay"></div>
+  </div>
+  
+  
+</section>
+
+
+<section  class="container categories-home">
+  <h2>Contactanos</h2>
+  <hr class="line-color">
+</section>
+<section class="container hero">
+  <div class="conatiner row">
+    <div class="col-md-6 izquierdad">
+      <youtube-player class="video" videoId="Fz7OFlh85hE" [height]="250" [width]="400" [startSeconds]="1"
+        [endSeconds]="204">
+      </youtube-player>
+    </div>
+    <div class="col-md-6 right">
+      <div class="about-us-text">
+        <br>
+        <div><img class="icon" src="assets/images/d.png" alt=""></div>
+        <p>LES OFRECEMOS LAS MEJORES MAQUINAS E INSUMOS PARA SUBLIMACIÓN EN PERU con 5 años de experiencia</p>
+        <div><img class="icon" src="assets/images/b.png" alt=""></div>
+        <p>ESTÁMOS UBICADOS EN LA AV. BOLIVIA 148 INT. 2020 C.C CENTRO LIMA, CERCADO DE LIMA.</p>
+        <div><img class="icon" src="assets/images/c.png" alt=""></div>
+        <p>
+          Nuestras redes:
+          <a class="text" target="_blank" href="https://linktr.ee/avcimport">linktr.ee/avcimport</a>
+        </p>
+      </div>
     </div>
   </div>
 </section>
+<div class="caja-contact">
+  <div class="contact-in">
+    <div class="contact-map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.821436113886!2d-77.03712039999999!3d-12.055803899999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c95de1a104ed%3A0xcc883e34f5041ee6!2sAVC%20Importaciones!5e0!3m2!1ses-419!2sco!4v1680808889875!5m2!1ses-419!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+</div>
 
-<!---------- Our Products ---------->
-
-<section class=" newProduct section">
-  <div class="container products">  
-    <div class="contenedor">
-      <div class="titulo">
-          <div class="shape right-skew">
-              <i class="fas fa-laptop"></i>
-              <p>Nuestros productos</p>
-          </div>
-        </div>
-    </div>
-    <br>
-    <div class="container caja-products">
-    <div class="new-content">
-      <div class="row" *ngFor="let product of products">
-        <img class="img-product" [src]="'./assets/product_images/' + product.img">
-        <h4>{{ product.title }}</h4>
-        <h5>{{ product.caption }}</h5>
-        <h3 class="price">{{ product.price | currency }}</h3>
-        <button (click)="addToCart(product)" class="btn-add-cart">Agregar</button>
-      </div>
-      </div>
-    </div>
-    </div>
-   </section>

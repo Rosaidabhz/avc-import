@@ -4,4 +4,8 @@ export interface Maquinas {
     caption: string;
     price: number;
     img: string;
+    personalize: string;
+    includes: string;
+    description: string;
+
 }

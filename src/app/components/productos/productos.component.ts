@@ -9,13 +9,23 @@ import { Maquinas } from 'src/app/Shared/interfaces/Maquinas';
   styleUrls: ['./productos.component.scss']
 })
 export class ProductosComponent implements OnInit {
-
+  selectedProduct: Maquinas | null = null;  
+  isCardVisible: boolean = false;
   products: Maquinas[] = [];
-
+  showProductDetails = true;
+  
   constructor(private productsService: ProductosService, private cartService: CartService) {
     this.products = this.productsService.getProducts();
   }
+  
+  showCard() {
+    this.isCardVisible = true;
+  }
 
+  closeCard() {
+    this.isCardVisible = false;
+  }
+  
   addToCart(product: Maquinas) {
     this.cartService.addToCart(product);    
     window.alert('Producto agregado al carrito: ' + product.title)
@@ -29,8 +39,11 @@ export class ProductosComponent implements OnInit {
     return total;
   }
 
-  ngOnInit(): void {
+  showDescription(product: Maquinas) {
+    this.selectedProduct = product;
+    this.showCard();
   }
   
-  
+  ngOnInit(): void {
+  }
 }
