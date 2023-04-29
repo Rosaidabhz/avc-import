@@ -45,7 +45,7 @@
 
 .line,
 .line-color {
-  border: 3px solid #610202 !important;
+  border: 3px solid #074796 !important;
   margin: auto;
   width: 100%;
   color: #000 !important;
@@ -113,10 +113,13 @@
 .action-one {
   color: rgb(221, 221, 221);
   background: rgb(0, 0, 0);
-  padding: 5px 50px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  width: 100%;
+  padding: 5rem;
+  justify-content: space-between;
+  gap: 1rem;
 }
 
 

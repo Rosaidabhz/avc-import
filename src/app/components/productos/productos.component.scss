@@ -11,10 +11,11 @@
 .new-content {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 1rem;
     text-align: left;
     align-items: center;
     justify-content: center;
+    width: 100%;
+    max-width: 1150px;
 
 }
 
@@ -329,7 +330,7 @@
 
 .line,
 .line-color {
-    border: 3px solid #992f2f !important;
+    border: 3px solid #035a69 !important;
     margin: auto;
     width: 100%;
     color: #000 !important;
