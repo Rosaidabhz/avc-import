@@ -13,7 +13,6 @@
     position: relative;
   }
 .about-us-title {
-    font-family: 'Poppins';
     font-style: normal;
     font-weight: 500;
     font-size: 30px;
@@ -27,7 +26,6 @@
 }
 
 .about-us-text {
-    font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -55,12 +53,13 @@
   }
   .categories-home h2 {
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 50px;
     text-align: center;
     color: #000000;
+    font-family: 'Arial';
+
   }
   .categories-home hr {
     border: 3px solid black;
@@ -172,6 +171,15 @@
     .title-about{
       font-size: 20px !important;
     }
+    .roww {
+      max-height: 100%;
+    }
+    .img-web{
+      max-height: 300px;
+    }
+    .p-containere{
+     font-size: 14px;
+    }
 }
 
 .about-us-text p {
@@ -230,7 +238,6 @@
   padding: 10px;
   color: #000;
   font-size: 17px;
-  font-family: 'ruda';
 }
 .text-containere p:first-of-type {
   font-weight: bold;
@@ -245,7 +252,6 @@
 }
 
 .title-about{
-  font-size: 40px;
   width: 100%;
 
 }

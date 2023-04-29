@@ -6,7 +6,6 @@
 .center-text h2 {
     text-align: center;
     font-weight: 500;
-    font-family: 'poppins';
 }
 
 .new-content {
@@ -78,7 +77,6 @@
     text-transform: uppercase;
     font-weight: 600;
     transition: all .50s ease;
-    font-family: 'poppins';
     color: #132264;
 }
 
@@ -89,7 +87,6 @@
 .row h5 {
     font-weight: 500;
     margin-bottom: 10px;
-    font-family: 'poppins';
     color: #2e2718;
     font-size: medium;
 }
@@ -127,7 +124,9 @@
     margin-top: auto;
     display: flex;
 }
-
+.cart-boton{
+    float: right;
+}
 .contenedor {
     max-width: 1200px;
     width: 90%;
@@ -138,7 +137,6 @@
 .titulo {
     border-bottom: 3px solid rgb(255, 186, 106);
     color: #000000;
-    font-family: 'Poppins';
     font-size: 20px;
 }
 
@@ -314,7 +312,6 @@
 
 
 .about-us-text {
-    font-family: 'Poppins';
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -346,12 +343,13 @@
 
 .categories-home h2 {
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 50px;
     text-align: center;
     color: #000000;
+    font-family: 'Arial';
+
 }
 
 .categories-home hr {
