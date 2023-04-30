@@ -118,34 +118,6 @@
     }
 }
 
-.about-us {
-    display: flex;
-    align-items: center;
-    padding-top: 60px;
-    padding-bottom: 7rem;
-    background-image: url(https://img.freepik.com/free-psd/white-ceramic-mug-mockup-isolated_176382-1068.jpg?w=2000);
-    background-position: center;
-    justify-content: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    flex-direction: row;
-    height: 100%;
-}
-
-.about-us-left {
-    flex-basis: 50%;
-}
-
-.about-us-right {
-    flex-basis: 50%;
-    height: 250px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 0 0px;
-}
-
 .about-us-text {
     margin: 0;
 }

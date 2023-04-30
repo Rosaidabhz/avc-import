@@ -14,10 +14,11 @@
 .back{
   justify-content: center;
   align-items: center;
-  background-image: url(https://anthembrand.s3.amazonaws.com/image/AB%20ID%2017-3%20-%20Personalized%20Chipotle%20Items.webp);
+  background-image: url(https://worldfinancialreview.com/wp-content/uploads/2022/04/0_Cnrh1I4837nka_7I.jpg);
   justify-content: center;
   background-repeat: no-repeat;
   background-size: cover;
+  padding: 50px;
   width: 100%;
 }
 .izquierdad {
@@ -179,16 +180,7 @@
 }
 
 
-.categories-home h2 {
-  text-align: center;
-  font-family: 'Arial';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 50px;
-  text-align: center;
-  color: #000000;
-  margin: 0px !important ;
-}
+
 
 .categories-home hr {
   border: 3px solid black;
@@ -231,6 +223,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  box-shadow: 0px 0px 10px 0px #0d4c9e;
+
 }
 
 .categories-box-text {
@@ -300,27 +294,7 @@
   height: 200PX;
 }
 
-/*MEDIA QUIERES*/
-@media (max-width: 992px) {
-  .action-one {
-    flex-direction: column;
-  }
 
-  .action-info {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .action-info-text p {
-    margin-top: 20px;
-  }
-
-  .action-info-text:first-child {
-    order: 1;
-    text-align: center;
-
-  }
-}
 
 .categories-links {
   display: grid;
@@ -361,28 +335,89 @@
 
 .text-catalago {
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 400;
   color: #ffffff;
   text-decoration: none;
   display: flex;
   margin-top: 10px;
 }
 
-.boton-catalago {
-  flex-direction: row;
+
+.home-h2{
+  font-family: 'Arial';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  color: #000000;
+  margin: 0px !important ;
+}
+.containerere {
   display: flex;
-  margin: 0 auto;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  max-width: 1250px;
+  justify-content:space-between;
+}
+
+.boton-catalago {
+  display: inline-block;
   width: 150px;
   height: 50px;
-  background: #ab2c2c;
+  background: #2cab4c;
   border-radius: 38px;
   text-align: center;
-  justify-content: center;
   text-decoration: none;
+  box-shadow: 0px 0px 10px 0px #131418;
 
 }
 
 .boton-catalago:hover {
   background-color: #ff3e3e;
   color: white;
+}
+/*MEDIA QUIERES*/
+@media (max-width: 992px) {
+  .action-one {
+    flex-direction: column;
+  }
+
+  .action-info {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .action-info-text p {
+    margin-top: 20px;
+  }
+
+  .action-info-text:first-child {
+    order: 1;
+    text-align: center;
+
+  }
+  .home-h2 {
+    text-align: center;
+    text-align: center;
+    margin: 0px !important ;
+    font-size: 30px;
+  }
+  .boton-catalago {
+    flex-direction: row;
+    display: flex;
+    margin: 0 auto;
+    float: none;
+    text-align: center;
+    justify-content: center;  
+  }
+  .containerere {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    max-width: 1250px;
+    justify-content:space-between;
+  }
 }
