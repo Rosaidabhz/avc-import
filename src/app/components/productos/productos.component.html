@@ -1,5 +1,5 @@
 
-<section class="newProduct section">
+<section class="section">
   <div class="caja-products">
     <div class="new-content">
       <div class="row caja" *ngFor="let product of products">
@@ -22,8 +22,8 @@
         </div>
         <div class="product-description-container" style="overflow-y: auto;">
           <div class="product-description">
-            <h5 style="color: rgb(8, 8, 134);"  >¿Qué Puedes Sublimar?</h5><br><h6>{{ selectedProduct.personalize }}</h6>
-            <h5 style="color: rgb(8, 8, 134);"  >¿Qué incluye la máquina? </h5><br><h6>{{ selectedProduct.includes }}</h6>
+            <h5 style="color: rgb(8, 8, 134);"  >Puedes Sublimar:</h5><br><h6>{{ selectedProduct.personalize }}</h6>
+            <h5 style="color: rgb(8, 8, 134);"  >La máquina incluye:</h5><br><h6>{{ selectedProduct.includes }}</h6>
             <h6>{{ selectedProduct.description }}</h6>
             <button (click)="addToCart(selectedProduct)" style="background-color: rgb(6, 90, 90);" class="btn-add-cart ">Agregar al carrito</button>
           </div>

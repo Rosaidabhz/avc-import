@@ -1,4 +1,4 @@
-.hero {
+.hero{
   justify-content: center;
   align-items: center;
   margin-top: 2rem;
@@ -11,7 +11,15 @@
   width: 100%;
   max-width: 1150px;
 }
-
+.back{
+  justify-content: center;
+  align-items: center;
+  background-image: url(https://anthembrand.s3.amazonaws.com/image/AB%20ID%2017-3%20-%20Personalized%20Chipotle%20Items.webp);
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+}
 .izquierdad {
   float: left;
   text-align: left;
@@ -179,6 +187,7 @@
   font-size: 50px;
   text-align: center;
   color: #000000;
+  margin: 0px !important ;
 }
 
 .categories-home hr {
@@ -193,6 +202,7 @@
   grid-template-columns: auto auto auto auto auto;
   align-items: center;
   justify-content: center;
+  padding: 20px;
 }
 
 
@@ -208,9 +218,9 @@
 .categories-box {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 10px;
   box-shadow: 0 2px 10px 2px #00000010;
-
+  padding: 10px;
+  border-radius: 30px;
 
 }
 
