@@ -334,13 +334,6 @@
     }
 }
 
-.ytp-cued-thumbnail-overlay-image,
-.video {
-    width: 100% !important;
-    display: flex;
-    position: relative;
-}
-
 
 
 .about-us-text {
@@ -369,7 +362,11 @@
     border-bottom: 3px solid #1161bd;
     align-items: center;
 }
-
+.hero{
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+  }
 
 
 .about-us-text p {
@@ -383,12 +380,13 @@
   }
   
   .social-icons {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     text-align: center;
     gap: 2rem;
+    padding: 10px;
   }
   
   .social-icon {
@@ -417,6 +415,7 @@
   .img-tiencd {
     margin: auto;
     height: 100% !important;
+    margin-bottom: 0 !important;
   }
   
   @media only screen and (max-width: 768px) {
